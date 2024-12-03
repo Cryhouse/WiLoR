@@ -29,7 +29,7 @@ RUN wget https://huggingface.co/spaces/rolpotamias/WiLoR/resolve/main/pretrained
 # Install the requirements in the virtual environment
 RUN . venv/bin/activate && python -m ensurepip --upgrade && pip install numpy && pip install dill && pip install --no-cache-dir -r WiLoR/requirements.txt
 
-COPY MANO_RIGHT.pkl ./WiLoR/mano_data/MANO_RIGHT.pkl
+# COPY MANO_RIGHT.pkl ./WiLoR/mano_data/MANO_RIGHT.pkl
 # docker build -t wilor-test .
 # docker run -it --rm -v /home/ubuntu/mnt:/code/mnt wilor-test
 # python demo.py --img_folder demo_img --out_folder ../mnt
